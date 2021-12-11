@@ -17,4 +17,5 @@ jobs:
 
       - name: run shell script
         run: |
+          chmod u+x ./bash_greetings.sh
           ./bash_greetings.sh
