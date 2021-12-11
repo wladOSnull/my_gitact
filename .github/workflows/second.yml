@@ -1,0 +1,20 @@
+name: workflow_second
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: 
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: List of files in current directory
+        run: ls -la
+
+      - name: run shell script
+        run: |
+          ./bash_greetings.sh
