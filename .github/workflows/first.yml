@@ -3,6 +3,9 @@ name: workflow_first
 on:
   push:
     branches: [ branch1 ]
+  pull_request: 
+    branches: [ master ]
+    
   workflow_dispatch: 
 
 jobs:
