@@ -1,2 +1,3 @@
 # my_gitact
-test git act
+
+git repo for hw7.1? task
